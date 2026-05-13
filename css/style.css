@@ -31,6 +31,10 @@ img{
     display: block;
 }
 
+.hero-img{
+    width: 40%;
+    max-width: 350px;
+}
 .hero{
     width: 100%;
     display: flex;
@@ -66,17 +70,28 @@ img{
     font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
+    transition: 0.5s;
 }
 
-.botao-principal {
+.botao-principal{
     background-color: var(--color-text);
     color: var(--corlor-white);
 }
 
-.botao-secundario {
+.botao-principal:hover{
+    transform: scale(1.1);
+
+}
+
+.botao-secundario{
     background-color: transparent;
     color: var(--cor-principal);
     border: 2px solid var(--cor-principal);
+}
+
+.botao-secundario:hover{
+    transform: scale(1.1);
+
 }
 
 .areas{
@@ -126,6 +141,7 @@ p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 24px;
+    text-align: justify;
 }
 
 .cards {
@@ -161,6 +177,7 @@ p {
     padding: 0 18px;
     line-height: 1.6;
     text-align: center;
+
 }
 
 .card h3{
@@ -180,7 +197,9 @@ p {
     gap: 60px;
     background-color: var(--corlor-white);
 }
-
+.sobre-imagem{
+    width: 35%;
+}
 .final-conteudo{
     width: 50%;
 }
@@ -194,14 +213,14 @@ li {
     font-size: 16px;
 }
 
-li::before {
+li:before {
     content: "✓";
     color: var(--color-dark);
     font-weight: 700;
     margin-right: 10px;
 }
 
-footer {
+.rodape{
     width: 100%;
     height: 100px;
     background-color: var(--color-dark);
@@ -209,8 +228,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
-footer p {
+.rodape:p {
     margin-bottom: 0;
 }
